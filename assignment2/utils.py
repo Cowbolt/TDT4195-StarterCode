@@ -1,6 +1,8 @@
 import torch
 import os
 import skimage
+import skimage.draw
+import skimage.io
 import numpy as np
 import matplotlib.pyplot as plt
 import warnings

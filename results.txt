@@ -1,0 +1,24 @@
+2b:
+Final Validation loss: 0.04647545034813273. Final Validation accuracy: 0.9841
+
+
+2c:
+Final Validation loss: 0.024705985122045894. Final Validation accuracy: 0.9922
+
+
+3a:
+
+1. Take the fourier transform of an image
+2. Perform convolution on the fourier transformed image with some filter (in accordance with the convolution theorem).
+3. Retrieve the inverse transform of the result.
+
+
+3b:
+High-pass filters take on values which are at least some distance away from the center (zero-frequency component).
+High-pass filters take on values which are at least some distance close to the center.
+
+
+3c:
+
+The values of a and b are some minimum distance from the center, so they are high-pass filters.
+c has values which are at most some distance away from the cetner, so it's a low pass filter.
