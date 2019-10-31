@@ -17,7 +17,15 @@ def MaxPool2d(im: np.array,
     stride = kernel_size
     ### START YOUR CODE HERE ### (You can change anything inside this block) 
 
+    new_im = np.ndarray([im.shape[0]//stride,im.shape[1]//stride, im.shape[2]])
 
+    for y in range(0,len(im)-kernel_size+1,stride):
+        for x in range(0,len(im[0])-kernel_size+1,stride):
+            maxpool = [0,0,0]
+            for k_y in range(kernel_size):
+                for k_x in range(kernel_size):
+                    maxpool = [max(m, c) for m, c in zip(maxpool, im[y+k_y][x+k_x])]
+            new_im[int(y/stride),int(x/stride)] = maxpool
 
     return new_im
     ### END YOUR CODE HERE ### 
